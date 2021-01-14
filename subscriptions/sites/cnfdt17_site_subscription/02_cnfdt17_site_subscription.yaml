@@ -1,0 +1,14 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  name: cnfdt17-site-subscription
+  namespace: cnfdt17-site-subscription
+  labels:
+    app: cnfdt17-site-subscription
+  annotations:
+    apps.open-cluster-management.io/git-path: manifests/sites/cnfdt17_site
+    apps.open-cluster-management.io/git-branch: main
+spec:
+  channel: cnfdt17-site-subscription/cnfdt17-site-subscription 
+  placement:
+    local: true

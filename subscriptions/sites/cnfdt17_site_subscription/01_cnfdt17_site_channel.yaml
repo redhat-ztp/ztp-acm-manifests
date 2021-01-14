@@ -1,0 +1,9 @@
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Channel
+metadata:
+  name: cnfdt17-site-subscription
+  namespace: cnfdt17-site-subscription
+spec:
+  type: GitHub
+  pathname: https://github.com/imiller0/ztp-ran-manifests
